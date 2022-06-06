@@ -1,0 +1,1 @@
+Hello! This is my console game "Bug simulator" written in java. In this game you will play as a bug. Have a good time! 

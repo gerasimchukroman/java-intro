@@ -9,41 +9,30 @@ public class Main {
 
         System.out.println("Привет, мой друг! Это симулятор жучка !");
         System.out.println("Жизнь жучка интересна и занимательна!");
-        Bug bug = new Bug(290,100,100);
+        AdultBug adultBug = new AdultBug(290, 100, 100);
+        LarvaBug larvaBug = new LarvaBug(0, 100, 100);
+
+
         while (true) {
-            System.out.println(" ");
-            System.out.println("Выберите действие: ");
-            System.out.println(" ");
-            System.out.println("1 - Покушать");
-            System.out.println("2 - Поразмножаться");
-            System.out.println("3 - Подраться с сородичем");
-            System.out.println("4 - Поспать");
-            System.out.println("5 - Текущее состояние жучка");
-            System.out.println("0 - Выход из симулятора");
+            System.out.println("Выберете персонажа: ");
+            System.out.println("1 - Червячок");
+            System.out.println("2 - Жучок");
+            System.out.println("3 - Выход");
             Scanner scanner = new Scanner(System.in);
             int command = scanner.nextInt();
             if (command == 1) {
-                bug.eatFood();
-            }
-            else if (command == 2){
-                bug.reproductionBug();
-            }
-            else if (command == 3){
-                bug.bugFight();
-            }
-            else if (command ==4){
-                bug.bugSleep();
-            }
-            else if (command == 5){
-                bug.bugNow();
-            }
-            else if (command == 0) {
-                bug.bugExit();
+                larvaBug.bugSelector();
+
+            } else if (command == 2) {
+                adultBug.bugSelector();
+            } else if (command == 3) {
+                System.out.println("Вы вышли из симулятора!");
                 break;
-            }
-            else {
-                System.out.println("Неизвестная команда. Попробуйте еще разочек.");
+            } else {
+                System.out.println("Неизвестная команда");
             }
         }
     }
 }
+
+
