@@ -28,7 +28,6 @@ public class AdultBug extends Bug {
     }
 
     @Override
-
     public void eatFood() {
         System.out.println("Еда восстанавливает здоровье");
         System.out.println("Выберите еду: ");
@@ -70,7 +69,7 @@ public class AdultBug extends Bug {
         }
     }
 
-    public void reproductionBug() {
+    private void reproductionBug() {
         while (bugStamina >= 50) {
             bugStamina = bugStamina - 10;
             bugCount = bugCount + 2;

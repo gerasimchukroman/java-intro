@@ -28,7 +28,6 @@ public class LarvaBug extends Bug {
     }
 
     @Override
-
     public void eatFood() {
         System.out.println("Еда восстанавливает здоровье и дает опыт");
         System.out.println("Выберите еду: ");
@@ -250,6 +249,5 @@ public class LarvaBug extends Bug {
                 System.out.println("Неизвестная команда. Попробуйте еще разочек.");
             }
         }
-
     }
 }

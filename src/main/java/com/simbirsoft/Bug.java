@@ -2,7 +2,7 @@ package com.simbirsoft;
 
 public abstract class Bug {
 
-    public abstract void eatFood();
+    protected abstract void eatFood();
 
     public abstract void bugFight();
 
